@@ -14,10 +14,5 @@
       <i class="glyphicon glyphicon-refresh"></i> Refresh
     </a>
   </div>
-  <div class="col-md-2">
-    <a href="#" class="btn btn-primary">
-      <i class="glyphicon glyphicon-print"></i> Cetak
-    </a>
-  </div>
 </div>
 <br>

@@ -1,8 +1,34 @@
 <?php include('../_partials/top.php') ?>
 
-<h1 class="page-header">Data Warga</h1>
+<h1 class="page-header">Data Kartu Keluarga</h1>
 <?php include('_partials/menu.php') ?>
 
+<form action="" method="post">
+<h3>Daftar Nama Warga</h3>
+<table class="table table-striped table-middle">
+  <tr>
+    <th width="20%">Nama Warga</th>
+    <td width="1%">:</td>
+    <td>
+      <select class="form-control">
+        <option value="">Nama 1</option>
+        <option value="">Nama 2</option>
+        <option value="">Nama 3</option>
+        <option value="">Nama 4</option>
+        <option value="">Nama 5</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<button type="submit" class="btn btn-primary btn-lg">
+  <i class="glyphicon glyphicon-plus"></i> Tambahkan
+</button>
+</form>
+
+<br><br>
+
+<h3>Data Anggota Kartu Keluarga</h3>
 <table class="table table-striped table-condensed table-hover" id="datatable">
   <thead>
     <tr>
@@ -37,18 +63,11 @@
           </button>
           <ul class="dropdown-menu pull-right" role="menu">
             <li>
-              <a href="show.php"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
+              <a href="../user/show.php"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="edit.php"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
-            </li>
-            <li>
-              <a href="mutasi.php"><span class="glyphicon glyphicon-export"></span> Mutasi</a>
-            </li>
-            <li class="divider"></li>
-            <li>
-              <a href="#"><span class="glyphicon glyphicon-trash"></span> Hapus</a>
+              <a href="#"><span class="glyphicon glyphicon-trash"></span> Hapus dari Anggota</a>
             </li>
           </ul>
         </div>
@@ -56,26 +75,5 @@
     </tr>
   </tbody>
 </table>
-
-<br><br>
-
-<div class="well">
-  <dl class="dl-horizontal">
-    <dt>Total Warga</dt>
-    <dd>20 orang</dd>
-
-    <dt>Jumlah Laki-laki</dt>
-    <dd>20 orang</dd>
-
-    <dt>Jumlah Perempuan</dt>
-    <dd>25 orang</dd>
-
-    <dt>Warga < 17 tahun</dt>
-    <dd>14 orang</dd>
-
-    <dt>Warga >= 17 tahun</dt>
-    <dd>18 orang</dd>
-  </dl>
-</div>
 
 <?php include('../_partials/bottom.php') ?>

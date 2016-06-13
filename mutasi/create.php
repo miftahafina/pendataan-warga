@@ -34,7 +34,7 @@
 </table>
 
 <h3>B. Data Alamat</h3>
-<table class="table table-striped">
+<table class="table table-striped table-middle">
   <tr>
     <th width="20%">Alamat KTP</th>
     <td width="1%">:</td>
@@ -83,7 +83,7 @@
 </table>
 
 <h3>C. Data Lain-lain</h3>
-<table class="table table-striped">
+<table class="table table-striped table-middle">
   <tr>
     <th width="20%">Agama</th>
     <td width="1%">:</td>
@@ -107,7 +107,7 @@
 </table>
 
 <h3>D. Data Aplikasi</h3>
-<table class="table table-striped">
+<table class="table table-striped table-middle">
   <tr>
     <th width="20%">Diinput oleh</th>
     <td width="1%">:</td>
