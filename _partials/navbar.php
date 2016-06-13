@@ -7,11 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Project name</a>
+      <a class="navbar-brand" href="../dasbor">Aplikasi Pendataan Warga</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="glyphicon glyphicon-home"></i> Dasbor</a></li>
+        <li><a href="../dasbor"><i class="glyphicon glyphicon-home"></i> Dasbor</a></li>
         <li><a href="#"><i class="glyphicon glyphicon-wrench"></i> Pengaturan</a></li>
         <li><a href="#"><i class="glyphicon glyphicon-log-out"></i> Keluar</a></li>
       </ul>

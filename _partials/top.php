@@ -12,20 +12,23 @@
     <title>Aplikasi Pendataan Warga</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- DataTable CSS -->
+    <link href="../assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/dashboard.css" rel="stylesheet">
+    <link href="../assets/css/dashboard.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <?php include('_partials/navbar.php') ?>
+    <?php include('../_partials/navbar.php') ?>
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-          <?php include('_partials/sidebar.php') ?>
+          <?php include('../_partials/sidebar.php') ?>
         </div>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
