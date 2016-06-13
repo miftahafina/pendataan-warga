@@ -13,7 +13,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="../dasbor"><i class="glyphicon glyphicon-home"></i> Dasbor</a></li>
         <li><a href="#"><i class="glyphicon glyphicon-wrench"></i> Pengaturan</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-log-out"></i> Keluar</a></li>
+        <li><a href="../login"><i class="glyphicon glyphicon-log-out"></i> Keluar</a></li>
       </ul>
     </div>
   </div>
