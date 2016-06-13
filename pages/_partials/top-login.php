@@ -7,15 +7,15 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Aplikasi Pendataan Warga">
     <meta name="author" content="Murti Ayu Wijayanti">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../../../favicon.ico">
 
     <title>Aplikasi Pendataan Warga</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../assets/css/login.css" rel="stylesheet">
+    <link href="../../assets/css/login.css" rel="stylesheet">
   </head>
 
   <body>

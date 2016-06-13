@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="../assets/img/a.png">
+      <img src="../../assets/img/a.png">
       <div class="caption">
         <p>Lorem ipsum dolor sit caption</p>
         <p>
