@@ -103,3 +103,13 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+/*
+ My Own
+ */
+ .table-middle tr>th{
+    vertical-align: middle !important;
+ }
+ .table-middle tr>td{
+    vertical-align: middle !important;
+ }

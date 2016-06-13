@@ -4,7 +4,7 @@
 <?php include('_partials/menu.php') ?>
 
 <!-- <div class="table-responsive"> -->
-  <table class="table table-striped table-condensed" id="datatable">
+  <table class="table table-striped table-condensed table-hover" id="datatable">
     <thead>
       <tr>
         <th>No.</th>
@@ -38,14 +38,14 @@
             </button>
             <ul class="dropdown-menu pull-right" role="menu">
               <li>
-                <a href="#"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
+                <a href="show.php"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
               </li>
               <li class="divider"></li>
               <li>
-                <a href="#"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
+                <a href="edit.php"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
               </li>
               <li>
-                <a href="#"><span class="glyphicon glyphicon-export"></span> Mutasi</a>
+                <a href="mutasi.php"><span class="glyphicon glyphicon-export"></span> Mutasi</a>
               </li>
               <li class="divider"></li>
               <li>
