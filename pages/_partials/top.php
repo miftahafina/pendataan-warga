@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user'])) {
+  // jika user belum login
+  header('Location: ../login');
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
