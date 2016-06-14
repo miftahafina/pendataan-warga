@@ -3,13 +3,15 @@
 <h1 class="page-header">Data Warga</h1>
 <?php include('_partials/menu.php') ?>
 
+<?php include('data-index.php') ?>
+
 <table class="table table-striped table-condensed table-hover" id="datatable">
   <thead>
     <tr>
       <th>#</th>
       <th>NIK</th>
       <th>Nama Warga</th>
-      <th>Tempat Lahir</th>
+      <th>L/P</th>
       <th>Usia</th>
       <th>Pendidikan</th>
       <th>Pekerjaan</th>
@@ -19,16 +21,19 @@
     </tr>
   </thead>
   <tbody>
+    <?php foreach ($data_warga as $warga) : ?>
     <tr>
-      <td>1</td>
-      <td>12345678901234</td>
-      <td>Miftah Afina</td>
-      <td>Pemalang</td>
-      <td>17</td>
-      <td>SMA</td>
-      <td>Serabutan</td>
-      <td>Tidak Kawin</td>
-      <td>Tetap</td>
+      <td><?php echo $warga['id_warga'] ?></td>
+      <td><?php echo $warga['nik_warga'] ?></td>
+      <td><?php echo $warga['nama_warga'] ?></td>
+      <td><?php echo $warga['jenis_kelamin_warga'] ?></td>
+      <td>
+        <?php echo ($warga['tanggal_lahir_warga'] != '0000-00-00') ? date('d-m-Y', strtotime($warga['tanggal_lahir_warga'])) : ''?>
+      </td>
+      <td><?php echo $warga['pendidikan_terakhir_warga'] ?></td>
+      <td><?php echo $warga['pekerjaan_warga'] ?></td>
+      <td><?php echo $warga['status_perkawinan_warga'] ?></td>
+      <td><?php echo $warga['status_warga'] ?></td>
       <td>
         <!-- Single button -->
         <div class="btn-group pull-right">
@@ -37,23 +42,26 @@
           </button>
           <ul class="dropdown-menu pull-right" role="menu">
             <li>
-              <a href="show.php"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
+              <a href="show.php?id_warga=<?php echo $warga['id_warga'] ?>"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="edit.php"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
+              <a href="edit.php?id_warga=<?php echo $warga['id_warga'] ?>"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
             </li>
             <li>
               <a href="mutasi.php"><span class="glyphicon glyphicon-export"></span> Mutasi</a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="#"><span class="glyphicon glyphicon-trash"></span> Hapus</a>
+              <a href="delete.php?id_warga=<?php echo $warga['id_warga'] ?>" onclick="return confirm('Yakin hapus data ini?')">
+                <span class="glyphicon glyphicon-trash"></span> Hapus
+              </a>
             </li>
           </ul>
         </div>
       </td>
     </tr>
+    <?php endforeach ?>
   </tbody>
 </table>
 

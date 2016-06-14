@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 13, 2016 at 03:26 PM
+-- Generation Time: Jun 14, 2016 at 02:44 AM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.6.19
 
@@ -102,7 +102,7 @@ CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
   `nama_user` varchar(45) NOT NULL,
   `username_user` varchar(20) NOT NULL,
-  `password_user` varchar(20) NOT NULL,
+  `password_user` varchar(32) NOT NULL,
   `keterangan_user` text NOT NULL,
   `status_user` enum('Admin','RT','RW') NOT NULL,
   `rt_user` varchar(3) NOT NULL,
@@ -115,6 +115,14 @@ CREATE TABLE `user` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_user`, `nama_user`, `username_user`, `password_user`, `keterangan_user`, `status_user`, `rt_user`, `rw_user`, `desa_kelurahan_user`, `kecamatan_user`, `kabupaten_kota_user`, `provinsi_user`, `negara_user`, `created_at`, `updated_at`) VALUES
+(1, 'Miftah Afina', 'miftahafina', '2e5b97a8a84739fecea891201a74bd7e', 'afin123', 'Admin', '001', '002', '', '', '', '', '', '2016-06-13 23:56:48', '0000-00-00 00:00:00'),
+(2, '', 'admin', '80c9ef0fb86369cd25f90af27ef53a9e', 'a123', '', '', '', '', '', '', '', '', '2016-06-13 23:56:58', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -228,7 +236,7 @@ ALTER TABLE `mutasi`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `warga`
 --
