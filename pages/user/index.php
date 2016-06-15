@@ -32,18 +32,17 @@
           </button>
           <ul class="dropdown-menu pull-right" role="menu">
             <li>
-              <a href="show.php"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
+              <a href="show.php?id_user=<?php echo $user['id_user'] ?>"><i class="glyphicon glyphicon-sunglasses"></i> Detail</a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="edit.php"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
-            </li>
-            <li>
-              <a href="mutasi.php"><span class="glyphicon glyphicon-export"></span> Mutasi</a>
+              <a href="edit.php?id_user=<?php echo $user['id_user'] ?>"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="#"><span class="glyphicon glyphicon-trash"></span> Hapus</a>
+              <a href="delete.php?id_user=<?php echo $user['id_user'] ?>" onclick="return confirm('Yakin hapus data ini?')">
+                <i class="glyphicon glyphicon-trash"></i> Hapus
+              </a>
             </li>
           </ul>
         </div>

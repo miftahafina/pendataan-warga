@@ -11,7 +11,7 @@ include('../../config/koneksi.php');
 // ambil data dari form
 $id_warga = htmlspecialchars($_GET['id_warga']);
 
-// update database
+// delete database
 $query = "DELETE FROM warga WHERE id_warga = $id_warga";
 
 $hasil = mysqli_query($db, $query);

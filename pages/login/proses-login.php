@@ -3,8 +3,8 @@ session_start();
 include('../../config/koneksi.php');
 
 // ambil data
-$username_user = $_POST['username_user'];
-$password_user = md5($_POST['password_user']);
+$username_user = htmlspecialchars($_POST['username_user']);
+$password_user = md5(htmlspecialchars($_POST['password_user']));
 
 // periksa username dan password
 $query = "SELECT * FROM user WHERE username_user = '$username_user' and password_user = '$password_user'";
