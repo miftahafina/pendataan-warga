@@ -12,6 +12,7 @@
       <th>NIK</th>
       <th>Nama Warga</th>
       <th>L/P</th>
+      <!-- <th>Lahir</th> -->
       <th>Usia</th>
       <th>Pendidikan</th>
       <th>Pekerjaan</th>
@@ -27,9 +28,10 @@
       <td><?php echo $warga['nik_warga'] ?></td>
       <td><?php echo $warga['nama_warga'] ?></td>
       <td><?php echo $warga['jenis_kelamin_warga'] ?></td>
-      <td>
+      <!-- <td>
         <?php echo ($warga['tanggal_lahir_warga'] != '0000-00-00') ? date('d-m-Y', strtotime($warga['tanggal_lahir_warga'])) : ''?>
-      </td>
+      </td> -->
+      <td><?php echo $warga['usia_warga'] ?></td>
       <td><?php echo $warga['pendidikan_terakhir_warga'] ?></td>
       <td><?php echo $warga['pekerjaan_warga'] ?></td>
       <td><?php echo $warga['status_perkawinan_warga'] ?></td>

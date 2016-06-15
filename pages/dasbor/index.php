@@ -2,15 +2,22 @@
 
 <h1 class="page-header">Dasbor</h1>
 
+<?php include('data-index.php') ?>
+
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="panel panel-primary">
       <div class="panel-body">
         <h3>Data Warga</h3>
-        <p>Total ada 900 data warga</p>
+        <p>
+          Total ada <?php echo $data_warga['total'] ?> data warga. <?php echo $data_warga_l['total'] ?> di antaranya laki-laki, dan <?php echo $data_warga_p['total'] ?> diantaranya perempuan.
+        </p>
+        <p>
+           Warga di atas 17 tahun berjumlah <?php echo $data_warga_ld_17['total'] ?> orang, dan di bawah 17 tahun berjumlah <?php echo $data_warga_kd_17['total'] ?> orang.
+        </p>
       </div>
       <div class="panel-footer">
-        <a href="" class="btn btn-primary" role="button">
+        <a href="../warga" class="btn btn-primary" role="button">
           <span class="glyphicon glyphicon-book"></span> Detil »
         </a>
       </div>
@@ -21,7 +28,7 @@
     <div class="panel panel-primary">
       <div class="panel-body">
         <h3>Data Kartu Keluarga</h3>
-        <p>Total ada 10 data kartu keluarga</p>
+        <p>Total ada <?php echo $data_kartu_keluarga['total'] ?> data kartu keluarga</p>
       </div>
       <div class="panel-footer">
         <a href="" class="btn btn-primary" role="button">
@@ -35,7 +42,12 @@
     <div class="panel panel-primary">
       <div class="panel-body">
         <h3>Data Mutasi</h3>
-        <p>Total ada 50 data mutasi</p>
+        <p>
+          Total ada <?php echo $data_mutasi['total'] ?> data mutasi. <?php echo $data_mutasi_l['total'] ?> di antaranya laki-laki, dan <?php echo $data_mutasi_p['total'] ?> diantaranya perempuan.
+        </p>
+        <p>
+           Warga di atas 17 tahun berjumlah <?php echo $data_mutasi_ld_17['total'] ?> orang, dan di bawah 17 tahun berjumlah <?php echo $data_mutasi_kd_17['total'] ?> orang.
+        </p>
       </div>
       <div class="panel-footer">
         <a href="" class="btn btn-primary" role="button">

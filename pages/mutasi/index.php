@@ -12,6 +12,7 @@
       <th>NIK</th>
       <th>Nama Mutasi</th>
       <th>L/P</th>
+      <!-- <th>Lahir</th> -->
       <th>Usia</th>
       <th>Pendidikan</th>
       <th>Pekerjaan</th>
@@ -27,9 +28,10 @@
       <td><?php echo $mutasi['nik_mutasi'] ?></td>
       <td><?php echo $mutasi['nama_mutasi'] ?></td>
       <td><?php echo $mutasi['jenis_kelamin_mutasi'] ?></td>
-      <td>
+      <!-- <td>
         <?php echo ($mutasi['tanggal_lahir_mutasi'] != '0000-00-00') ? date('d-m-Y', strtotime($mutasi['tanggal_lahir_mutasi'])) : ''?>
-      </td>
+      </td> -->
+      <td><?php echo $mutasi['usia_mutasi'] ?></td>
       <td><?php echo $mutasi['pendidikan_terakhir_mutasi'] ?></td>
       <td><?php echo $mutasi['pekerjaan_mutasi'] ?></td>
       <td><?php echo $mutasi['status_perkawinan_mutasi'] ?></td>
