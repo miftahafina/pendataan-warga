@@ -3,6 +3,8 @@
 <h1 class="page-header">Data User</h1>
 <?php include('_partials/menu.php') ?>
 
+<?php include('data-index.php') ?>
+
 <table class="table table-striped table-condensed table-hover" id="datatable">
   <thead>
     <tr>
@@ -15,12 +17,13 @@
     </tr>
   </thead>
   <tbody>
+    <?php foreach ($data_user as $user) : ?>
     <tr>
-      <td>1</td>
-      <td>Miftah Afina</td>
-      <td>afin</td>
-      <td>User ini tidak jelas</td>
-      <td>Admin</td>
+      <td><?php echo $user['id_user'] ?></td>
+      <td><?php echo $user['nama_user'] ?></td>
+      <td><?php echo $user['username_user'] ?></td>
+      <td><?php echo $user['keterangan_user'] ?></td>
+      <td><?php echo $user['status_user'] ?></td>
       <td>
         <!-- Single button -->
         <div class="btn-group pull-right">
@@ -46,6 +49,7 @@
         </div>
       </td>
     </tr>
+    <?php endforeach ?>
   </tbody>
 </table>
 
