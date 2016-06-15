@@ -42,19 +42,19 @@
           </button>
           <ul class="dropdown-menu pull-right" role="menu">
             <li>
-              <a href="show.php?id_warga=<?php echo $warga['id_warga'] ?>"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
+              <a href="show.php?id_warga=<?php echo $warga['id_warga'] ?>"><i class="glyphicon glyphicon-sunglasses"></i> Detail</a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="edit.php?id_warga=<?php echo $warga['id_warga'] ?>"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
+              <a href="edit.php?id_warga=<?php echo $warga['id_warga'] ?>"><i class="glyphicon glyphicon-edit"></i> Ubah</a>
             </li>
             <li>
-              <a href="mutasi.php"><span class="glyphicon glyphicon-export"></span> Mutasi</a>
+              <a href="../mutasi/create.php?id_warga=<?php echo $warga['id_warga'] ?>"><i class="glyphicon glyphicon-export"></i> Mutasi</a>
             </li>
             <li class="divider"></li>
             <li>
               <a href="delete.php?id_warga=<?php echo $warga['id_warga'] ?>" onclick="return confirm('Yakin hapus data ini?')">
-                <span class="glyphicon glyphicon-trash"></span> Hapus
+                <i class="glyphicon glyphicon-trash"></i> Hapus
               </a>
             </li>
           </ul>
