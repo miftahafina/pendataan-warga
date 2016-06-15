@@ -46,13 +46,6 @@
             </li>
             <li class="divider"></li>
             <li>
-              <a href="edit.php?id_mutasi=<?php echo $mutasi['id_mutasi'] ?>"><i class="glyphicon glyphicon-edit"></i> Ubah</a>
-            </li>
-            <li>
-              <a href="../mutasi/create.php?id_mutasi=<?php echo $mutasi['id_mutasi'] ?>"><i class="glyphicon glyphicon-export"></i> Mutasi</a>
-            </li>
-            <li class="divider"></li>
-            <li>
               <a href="delete.php?id_mutasi=<?php echo $mutasi['id_mutasi'] ?>" onclick="return confirm('Yakin hapus data ini?')">
                 <i class="glyphicon glyphicon-trash"></i> Hapus
               </a>
