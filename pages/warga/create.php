@@ -9,22 +9,22 @@
   <tr>
     <th width="20%">NIK</th>
     <td width="1%">:</td>
-    <td><input type="text" class="form-control" name="nik_warga"></td>
+    <td><input type="text" class="form-control" name="nik_warga" required></td>
   </tr>
   <tr>
     <th>Nama Warga</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="nama_warga"></td>
+    <td><input type="text" class="form-control" name="nama_warga" required></td>
   </tr>
   <tr>
     <th>Tempat Lahir</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="tempat_lahir_warga"></td>
+    <td><input type="text" class="form-control" name="tempat_lahir_warga" required></td>
   </tr>
   <tr>
     <th>Tanggal Lahir</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="tanggal_lahir_warga"></td>
+    <td><input type="text" class="form-control" name="tanggal_lahir_warga" required></td>
   </tr>
   <tr>
     <th>Jenis Kelamin</th>
@@ -44,12 +44,12 @@
   <tr>
     <th width="20%">Alamat KTP</th>
     <td width="1%">:</td>
-    <td><textarea class="form-control" name="alamat_ktp_warga"></textarea></td>
+    <td><textarea class="form-control" name="alamat_ktp_warga" required></textarea></td>
   </tr>
   <tr>
     <th>Alamat</th>
     <td>:</td>
-    <td><textarea class="form-control" name="alamat_warga"></textarea></td>
+    <td><textarea class="form-control" name="alamat_warga" required></textarea></td>
   </tr>
   <tr>
     <th>Desa/Kelurahan</th>

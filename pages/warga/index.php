@@ -4,6 +4,7 @@
 <?php include('_partials/menu.php') ?>
 
 <?php include('data-index.php') ?>
+<?php include('../dasbor/data-index.php') ?>
 
 <table class="table table-striped table-condensed table-hover" id="datatable">
   <thead>
@@ -72,19 +73,19 @@
 <div class="well">
   <dl class="dl-horizontal">
     <dt>Total Warga</dt>
-    <dd>20 orang</dd>
+    <dd><?php echo $jumlah_warga['total'] ?> orang</dd>
 
     <dt>Jumlah Laki-laki</dt>
-    <dd>20 orang</dd>
+    <dd><?php echo $jumlah_warga_l['total'] ?> orang</dd>
 
     <dt>Jumlah Perempuan</dt>
-    <dd>25 orang</dd>
+    <dd><?php echo $jumlah_warga_p['total'] ?> orang</dd>
 
     <dt>Warga < 17 tahun</dt>
-    <dd>14 orang</dd>
+    <dd><?php echo $jumlah_warga_kd_17['total'] ?> orang</dd>
 
     <dt>Warga >= 17 tahun</dt>
-    <dd>18 orang</dd>
+    <dd><?php echo $jumlah_warga_ld_17['total'] ?> orang</dd>
   </dl>
 </div>
 
