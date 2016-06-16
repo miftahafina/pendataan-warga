@@ -47,6 +47,9 @@
             <li>
               <a href="show.php?id_mutasi=<?php echo $mutasi['id_mutasi'] ?>"><i class="glyphicon glyphicon-sunglasses"></i> Detail</a>
             </li>
+            <li>
+              <a href="cetak-show.php?id_mutasi=<?php echo $mutasi['id_mutasi'] ?>" target="_blank"><i class="glyphicon glyphicon-print"></i> Cetak</a>
+            </li>
             <?php if ($_SESSION['user']['status_user'] != 'RW'): ?>
             <li class="divider"></li>
             <li>

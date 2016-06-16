@@ -48,7 +48,11 @@
             <li>
               <a href="show.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
             </li>
+            <li>
+              <a href="cetak-show.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>" target="_blank"><span class="glyphicon glyphicon-print"></span> Cetak</a>
+            </li>
             <?php if ($_SESSION['user']['status_user'] != 'RW'): ?>
+            <li class="divider"></li>
             <li>
               <a href="edit-anggota.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>"><span class="glyphicon glyphicon-list"></span> Ubah Anggota</a>
             </li>

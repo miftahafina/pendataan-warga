@@ -47,6 +47,9 @@
             <li>
               <a href="show.php?id_warga=<?php echo $warga['id_warga'] ?>"><i class="glyphicon glyphicon-sunglasses"></i> Detail</a>
             </li>
+            <li>
+              <a href="cetak-show.php?id_warga=<?php echo $warga['id_warga'] ?>" target="_blank"><i class="glyphicon glyphicon-print"></i> Cetak</a>
+            </li>
             <?php if ($_SESSION['user']['status_user'] != 'RW'): ?>
             <li class="divider"></li>
             <li>

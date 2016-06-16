@@ -12,7 +12,7 @@
         </a>
       </div>
       <div class="col-md-2">
-        <a href="#" class="btn btn-primary">
+        <a href="cetak-index.php" target="_blank" class="btn btn-primary">
           <i class="glyphicon glyphicon-print"></i> Cetak
         </a>
       </div>
