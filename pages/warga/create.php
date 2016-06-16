@@ -24,7 +24,7 @@
   <tr>
     <th>Tanggal Lahir</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="tanggal_lahir_warga" required></td>
+    <td><input type="text" class="form-control datepicker" name="tanggal_lahir_warga" required></td>
   </tr>
   <tr>
     <th>Jenis Kelamin</th>

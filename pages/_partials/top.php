@@ -27,6 +27,9 @@ if (!isset($_SESSION['user'])) {
 
     <!-- Custom styles for this template -->
     <link href="../../assets/css/dashboard.css" rel="stylesheet">
+
+    <!-- Date Range Picker style -->
+    <link href="../../assets/css/daterangepicker.css" rel="stylesheet">
   </head>
 
   <body>

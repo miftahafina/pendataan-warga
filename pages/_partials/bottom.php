@@ -17,5 +17,43 @@
       $('#datatable').DataTable();
     });
     </script>
+
+    <!-- Date Range Picker -->
+    <script type="text/javascript" src="../../assets/js/moment.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/daterangepicker.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.datepicker').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            locale: {
+              format: 'YYYY-MM-DD',
+              monthNames: [
+                "Januari",
+                "Februari",
+                "Maret",
+                "April",
+                "Mei",
+                "Juni",
+                "Juli",
+                "Agustus",
+                "September",
+                "Oktober",
+                "November",
+                "Desember"
+             ],
+              "daysOfWeek": [
+                "Mg",
+                "Sn",
+                "Sl",
+                "Rb",
+                "Km",
+                "Jm",
+                "Sb"
+              ]
+            }
+        });
+    });
+    </script>
   </body>
 </html>

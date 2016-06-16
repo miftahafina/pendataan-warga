@@ -26,7 +26,7 @@
   <tr>
     <th>Tanggal Lahir</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="tanggal_lahir_warga" value="<?php echo $data_warga[0]['tanggal_lahir_warga'] ?>"></td>
+    <td><input type="text" class="form-control datepicker" name="tanggal_lahir_warga" value="<?php echo $data_warga[0]['tanggal_lahir_warga'] ?>"></td>
   </tr>
   <tr>
     <th>Jenis Kelamin</th>

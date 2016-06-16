@@ -1,6 +1,6 @@
 <?php include('../_partials/top.php') ?>
 
-<h1 class="page-header">Data Warga</h1>
+<h1 class="page-header">Data Mutasi</h1>
 <?php include('_partials/menu.php') ?>
 
 <?php include('../warga/data-show.php') ?>
@@ -34,8 +34,6 @@
     <td>
       <select class="form-control" name="jenis_kelamin_mutasi" required readonly>
         <option value="<?php echo $data_warga[0]['jenis_kelamin_warga'] ?>" selected><?php echo $data_warga[0]['jenis_kelamin_warga'] ?></option>
-        <option value="L">Laki-laki</option>
-        <option value="P">Perempuan</option>
       </select>
     </td>
   </tr>
