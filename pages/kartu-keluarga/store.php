@@ -30,6 +30,9 @@ $query = "INSERT INTO kartu_keluarga (id_keluarga, nomor_keluarga, id_kepala_kel
 
 $hasil = mysqli_query($db, $query);
 
+// id terakhir
+// mysqli_insert_id($db)
+
 // cek keberhasilan pendambahan data
 if ($hasil == true) {
   echo "<script>window.alert('Tambah kartu keluarga berhasil'); window.location.href='../kartu-keluarga/create.php'</script>";
