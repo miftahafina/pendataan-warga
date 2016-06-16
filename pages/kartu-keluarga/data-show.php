@@ -28,3 +28,14 @@ $data_anggota_keluarga = array();
 while ($row_anggota = mysqli_fetch_assoc($hasil_anggota)) {
   $data_anggota_keluarga[] = $row_anggota;
 }
+
+// data warga
+// ambil dari database
+$query_warga = "SELECT * FROM warga";
+$hasil_warga = mysqli_query($db, $query_warga);
+
+$data_warga = array();
+
+while ($row_warga = mysqli_fetch_assoc($hasil_warga)) {
+  $data_warga[] = $row_warga;
+}

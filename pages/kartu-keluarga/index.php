@@ -53,7 +53,7 @@
             </li>
             <li class="divider"></li>
             <li>
-              <a href="edit.php"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
+              <a href="edit.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>"><span class="glyphicon glyphicon-edit"></span> Ubah</a>
             </li>
             <li class="divider"></li>
             <li>
