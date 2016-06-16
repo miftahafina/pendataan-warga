@@ -25,7 +25,9 @@
   <tr>
     <th>Tanggal Lahir</th>
     <td>:</td>
-    <td><?php echo $data_warga[0]['tanggal_lahir_warga'] ?></td>
+    <td>
+      <?php echo ($data_warga[0]['tanggal_lahir_warga'] != '0000-00-00') ? date('d-m-Y', strtotime($data_warga[0]['tanggal_lahir_warga'])) : ''?>
+    </td>
   </tr>
   <tr>
     <th>Jenis Kelamin</th>

@@ -21,12 +21,20 @@
   </thead>
   <tbody>
     <?php foreach ($data_kartu_keluarga as $kartu_keluarga) : ?>
+
+    <?php
+    // hitung anggota
+    $query_jumlah_anggota = "SELECT COUNT(*) AS total FROM warga_has_kartu_keluarga WHERE id_keluarga = ".$kartu_keluarga['id_keluarga'];
+    $hasil_jumlah_anggota = mysqli_query($db, $query_jumlah_anggota);
+    $jumlah_jumlah_anggota = mysqli_fetch_assoc($hasil_jumlah_anggota);
+    ?>
+
     <tr>
       <td><?php echo $kartu_keluarga['id_keluarga'] ?></td>
       <td><?php echo $kartu_keluarga['nomor_keluarga'] ?></td>
       <td><?php echo $kartu_keluarga['nama_warga'] ?></td>
       <td><?php echo $kartu_keluarga['nik_warga'] ?></td>
-      <td>???</td>
+      <td><?php echo $jumlah_jumlah_anggota['total'] ?></td>
       <td><?php echo $kartu_keluarga['alamat_keluarga'] ?></td>
       <td><?php echo $kartu_keluarga['rt_keluarga'] ?></td>
       <td><?php echo $kartu_keluarga['rw_keluarga'] ?></td>

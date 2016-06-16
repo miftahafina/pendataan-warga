@@ -15,7 +15,12 @@
   <tr>
     <th>ID Kepala Keluarga</th>
     <td>:</td>
-    <td><?php echo $data_keluarga[0]['id_kepala_keluarga'] ?></td>
+    <td><?php echo $data_keluarga[0]['nama_warga'] ?></td>
+  </tr>
+  <tr>
+    <th>NIK Kepala Keluarga</th>
+    <td>:</td>
+    <td><?php echo $data_keluarga[0]['nik_warga'] ?></td>
   </tr>
 </table>
 
@@ -110,7 +115,9 @@
       <td><?php echo $anggota_keluarga['nik_warga'] ?></td>
       <td><?php echo $anggota_keluarga['nama_warga'] ?></td>
       <td><?php echo $anggota_keluarga['tempat_lahir_warga'] ?></td>
-      <td><?php echo $anggota_keluarga['tanggal_lahir_warga'] ?></td>
+      <td>
+        <?php echo ($anggota_keluarga['tanggal_lahir_warga'] != '0000-00-00') ? date('d-m-Y', strtotime($anggota_keluarga['tanggal_lahir_warga'])) : ''?>
+      </td>
       <td><?php echo $anggota_keluarga['pendidikan_terakhir_warga'] ?></td>
       <td><?php echo $anggota_keluarga['pekerjaan_warga'] ?></td>
       <td><?php echo $anggota_keluarga['status_perkawinan_warga'] ?></td>
