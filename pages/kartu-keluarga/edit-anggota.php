@@ -6,21 +6,25 @@
 <?php include('data-edit-anggota.php') ?>
 
 <h3>Daftar Nama Warga</h3>
-<form action="" method="post">
+<form action="update-anggota.php" method="post">
   <table class="table table-striped table-middle">
     <tr>
       <th width="20%">Nama Warga</th>
       <td width="1%">:</td>
       <td>
-        <select class="form-control selectlive" required>
+        <select class="form-control selectlive" name="id_warga" required>
           <option value="" selected disabled>- pilih -</option>
           <?php foreach ($data_warga as $warga) : ?>
-          <option value="<?php echo $warga['id_warga'] ?>"><?php echo $warga['nama_warga'] ?></option>
+          <option value="<?php echo $warga['id_warga'] ?>">
+            <?php echo $warga['nama_warga'] ?> (NIK: <?php echo $warga['nik_warga'] ?>)
+          </option>
           <?php endforeach ?>
         </select>
       </td>
     </tr>
   </table>
+
+  <input type="hidden" name="id_keluarga" value="<?php echo $get_id_keluarga ?>">
 
   <button type="submit" class="btn btn-primary btn-lg">
     <i class="glyphicon glyphicon-plus"></i> Tambahkan
