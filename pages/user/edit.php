@@ -75,12 +75,12 @@
   <tr>
     <th>RT</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="rt_user" value="<?php echo $data_user[0]['rt_user'] ?>" required></td>
+    <td><input type="text" class="form-control" name="rt_user" value="<?php echo $data_user[0]['rt_user'] ?>" required readonly></td>
   </tr>
   <tr>
     <th>RW</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="rw_user" value="<?php echo $data_user[0]['rw_user'] ?>" required></td>
+    <td><input type="text" class="form-control" name="rw_user" value="<?php echo $data_user[0]['rw_user'] ?>" required readonly></td>
   </tr>
 </table>
 
