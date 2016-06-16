@@ -48,6 +48,7 @@
             <li>
               <a href="show.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
             </li>
+            <?php if ($_SESSION['user']['status_user'] != 'RW'): ?>
             <li>
               <a href="edit-anggota.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>"><span class="glyphicon glyphicon-list"></span> Ubah Anggota</a>
             </li>
@@ -59,6 +60,7 @@
             <li>
               <a href="delete.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>"><span class="glyphicon glyphicon-trash"></span> Hapus</a>
             </li>
+            <?php endif; ?>
           </ul>
         </div>
       </td>

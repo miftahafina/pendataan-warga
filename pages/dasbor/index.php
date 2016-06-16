@@ -31,7 +31,7 @@
         <p>Total ada <?php echo $jumlah_kartu_keluarga['total'] ?> data kartu keluarga</p>
       </div>
       <div class="panel-footer">
-        <a href="" class="btn btn-primary" role="button">
+        <a href="../kartu-keluarga" class="btn btn-primary" role="button">
           <span class="glyphicon glyphicon-inbox"></span> Detil »
         </a>
       </div>
@@ -50,7 +50,7 @@
         </p>
       </div>
       <div class="panel-footer">
-        <a href="" class="btn btn-primary" role="button">
+        <a href="../mutasi" class="btn btn-primary" role="button">
           <span class="glyphicon glyphicon-export"></span> Detil »
         </a>
       </div>

@@ -31,8 +31,10 @@ function is_active($page) {
   </li>
 </ul>
 
+<?php if ($_SESSION['user']['status_user'] != 'RW'): ?>
 <ul class="nav nav-sidebar">
   <li class="<?php is_active('user'); ?>">
     <a href="../user"><i class="glyphicon glyphicon-user"></i> User</a>
   </li>
 </ul>
+<?php endif; ?>

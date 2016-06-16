@@ -47,6 +47,7 @@
             <li>
               <a href="show.php?id_warga=<?php echo $warga['id_warga'] ?>"><i class="glyphicon glyphicon-sunglasses"></i> Detail</a>
             </li>
+            <?php if ($_SESSION['user']['status_user'] != 'RW'): ?>
             <li class="divider"></li>
             <li>
               <a href="edit.php?id_warga=<?php echo $warga['id_warga'] ?>"><i class="glyphicon glyphicon-edit"></i> Ubah</a>
@@ -60,6 +61,7 @@
                 <i class="glyphicon glyphicon-trash"></i> Hapus
               </a>
             </li>
+            <?php endif; ?>
           </ul>
         </div>
       </td>

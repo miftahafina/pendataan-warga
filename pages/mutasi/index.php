@@ -47,12 +47,14 @@
             <li>
               <a href="show.php?id_mutasi=<?php echo $mutasi['id_mutasi'] ?>"><i class="glyphicon glyphicon-sunglasses"></i> Detail</a>
             </li>
+            <?php if ($_SESSION['user']['status_user'] != 'RW'): ?>
             <li class="divider"></li>
             <li>
               <a href="delete.php?id_mutasi=<?php echo $mutasi['id_mutasi'] ?>" onclick="return confirm('Yakin hapus data ini?')">
                 <i class="glyphicon glyphicon-trash"></i> Hapus
               </a>
             </li>
+            <?php endif; ?>
           </ul>
         </div>
       </td>
