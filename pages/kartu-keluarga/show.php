@@ -13,7 +13,7 @@
     <td><?php echo $data_keluarga[0]['nomor_keluarga'] ?></td>
   </tr>
   <tr>
-    <th>ID Kepala Keluarga</th>
+    <th>Kepala Keluarga</th>
     <td>:</td>
     <td><?php echo $data_keluarga[0]['nama_warga'] ?></td>
   </tr>

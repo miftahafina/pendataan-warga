@@ -5,6 +5,24 @@
 
 <?php include('data-edit-anggota.php') ?>
 
+<table class="table table-striped table-middle">
+  <tr>
+    <th width="20%">Nomor Kartu Keluarga</th>
+    <td width="1%">:</td>
+    <td><?php echo $data_keluarga[0]['nomor_keluarga'] ?></td>
+  </tr>
+  <tr>
+    <th>Kepala Keluarga</th>
+    <td>:</td>
+    <td><?php echo $data_keluarga[0]['nama_warga'] ?></td>
+  </tr>
+  <tr>
+    <th>NIK Kepala Keluarga</th>
+    <td>:</td>
+    <td><?php echo $data_keluarga[0]['nik_warga'] ?></td>
+  </tr>
+</table>
+
 <h3>Daftar Nama Warga</h3>
 <form action="update-anggota.php" method="post">
   <table class="table table-striped table-middle">

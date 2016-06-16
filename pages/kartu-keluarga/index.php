@@ -57,7 +57,7 @@
             </li>
             <li class="divider"></li>
             <li>
-              <a href="#"><span class="glyphicon glyphicon-trash"></span> Hapus</a>
+              <a href="delete.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>"><span class="glyphicon glyphicon-trash"></span> Hapus</a>
             </li>
           </ul>
         </div>
@@ -72,7 +72,7 @@
 <div class="well">
   <dl class="dl-horizontal">
     <dt>Total Kartu Keluarga</dt>
-    <dd>20 keluarga</dd>
+    <dd><?php echo $jumlah_kartu_keluarga['total'] ?> keluarga</dd>
   </dl>
 </div>
 
