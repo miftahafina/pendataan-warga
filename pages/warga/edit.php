@@ -81,12 +81,12 @@
   <tr>
     <th>RT</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="rt_warga" value="<?php echo $data_warga[0]['rt_warga'] ?>"></td>
+    <td><input type="text" class="form-control" name="rt_warga" value="<?php echo $data_warga[0]['rt_warga'] ?>" readonly></td>
   </tr>
   <tr>
     <th>RW</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="rw_warga" value="<?php echo $data_warga[0]['rw_warga'] ?>"></td>
+    <td><input type="text" class="form-control" name="rw_warga" value="<?php echo $data_warga[0]['rw_warga'] ?>" readonly></td>
   </tr>
 </table>
 

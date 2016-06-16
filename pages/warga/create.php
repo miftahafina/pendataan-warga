@@ -79,12 +79,12 @@
   <tr>
     <th>RT</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="rt_warga" value="<?php echo $_SESSION['user']['rt_user'] ?>"></td>
+    <td><input type="text" class="form-control" name="rt_warga" value="<?php echo $_SESSION['user']['rt_user'] ?>" readonly></td>
   </tr>
   <tr>
     <th>RW</th>
     <td>:</td>
-    <td><input type="text" class="form-control" name="rw_warga" value="<?php echo $_SESSION['user']['rw_user'] ?>"></td>
+    <td><input type="text" class="form-control" name="rw_warga" value="<?php echo $_SESSION['user']['rw_user'] ?>" readonly></td>
   </tr>
 </table>
 
