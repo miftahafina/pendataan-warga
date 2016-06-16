@@ -17,10 +17,12 @@
     <th>ID Kepala Keluarga</th>
     <td>:</td>
     <td>
-      <select class="form-control" name="id_kepala_keluarga" required>
+      <select class="form-control selectlive" name="id_kepala_keluarga" required>
         <option value="" selected disabled>- pilih -</option>
         <?php foreach ($data_warga as $warga) : ?>
-        <option value="<?php echo $warga['id_warga'] ?>"><?php echo $warga['nama_warga'] ?></option>
+        <option value="<?php echo $warga['id_warga'] ?>">
+          <?php echo $warga['nama_warga'] ?> (NIK: <?php echo $warga['nik_warga'] ?>)
+        </option>
         <?php endforeach ?>
       </select>
     </td>

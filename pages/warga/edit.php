@@ -32,7 +32,7 @@
     <th>Jenis Kelamin</th>
     <td>:</td>
     <td>
-      <select class="form-control" name="jenis_kelamin_warga" required>
+      <select class="form-control selectpicker" name="jenis_kelamin_warga" required>
         <option value="<?php echo $data_warga[0]['jenis_kelamin_warga'] ?>" selected><?php echo $data_warga[0]['jenis_kelamin_warga'] ?></option>
         <option value="L">Laki-laki</option>
         <option value="P">Perempuan</option>
@@ -96,7 +96,7 @@
     <th width="20%">Agama</th>
     <td width="1%">:</td>
     <td>
-      <select class="form-control" name="agama_warga" required>
+      <select class="form-control selectlive" name="agama_warga" required>
         <option value="<?php echo $data_warga[0]['agama_warga'] ?>" selected><?php echo $data_warga[0]['agama_warga'] ?></option>
         <option value="Islam">Islam</option>
         <option value="Kristen">Kristen</option>
@@ -111,7 +111,7 @@
     <th>Pendidikan Terakhir</th>
     <td>:</td>
     <td>
-      <select class="form-control" name="pendidikan_terakhir_warga" required>
+      <select class="form-control selectlive" name="pendidikan_terakhir_warga" required>
         <option value="<?php echo $data_warga[0]['pendidikan_terakhir_warga'] ?>" selected><?php echo $data_warga[0]['pendidikan_terakhir_warga'] ?></option>
         <option value="Tidak Sekolah">Tidak Sekolah</option>
         <option value="Tidak Tamat SD">Tidak Tamat SD</option>
@@ -136,7 +136,7 @@
     <th>Status Perkawinan</th>
     <td>:</td>
     <td>
-      <select class="form-control" name="status_perkawinan_warga" required>
+      <select class="form-control selectpicker" name="status_perkawinan_warga" required>
         <option value="<?php echo $data_warga[0]['status_perkawinan_warga'] ?>" selected><?php echo $data_warga[0]['status_perkawinan_warga'] ?></option>
         <option value="Kawin">Kawin</option>
         <option value="Tidak Kawin">Tidak Kawin</option>
@@ -147,7 +147,7 @@
     <th>Status Tinggal</th>
     <td>:</td>
     <td>
-      <select class="form-control" name="status_warga" required>
+      <select class="form-control selectpicker" name="status_warga" required>
         <option value="<?php echo $data_warga[0]['status_warga'] ?>" selected><?php echo $data_warga[0]['status_warga'] ?></option>
         <option value="Tetap">Tetap</option>
         <option value="Kontrak">Kontrak</option>

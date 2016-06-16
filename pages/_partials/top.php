@@ -30,6 +30,9 @@ if (!isset($_SESSION['user'])) {
 
     <!-- Date Range Picker style -->
     <link href="../../assets/css/daterangepicker.css" rel="stylesheet">
+
+    <!-- Bootstrap Select style-->
+    <link rel="stylesheet" href="../../assets/css/bootstrap-select.min.css">
   </head>
 
   <body>

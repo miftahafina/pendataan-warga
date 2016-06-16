@@ -55,5 +55,15 @@
         });
     });
     </script>
+
+    <!-- Bootstrap Select -->
+    <script src="../../assets/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+    $('.selectlive').selectpicker({
+      liveSearch: true,
+      size: 6
+    });
+    $('.selectpicker').selectpicker();
+    </script>
   </body>
 </html>
