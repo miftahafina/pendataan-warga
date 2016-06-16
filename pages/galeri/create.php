@@ -9,7 +9,7 @@
   <tr>
     <th width="20%">Path</th>
     <td width="1%">:</td>
-    <td><input type="file" class="form-control" name="file" required></td>
+    <td><input type="file" class="form-control" name="image" required></td>
   </tr>
   <tr>
     <th>Caption</th>

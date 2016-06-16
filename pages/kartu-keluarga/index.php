@@ -3,14 +3,16 @@
 <h1 class="page-header">Data Kartu Keluarga</h1>
 <?php include('_partials/menu.php') ?>
 
+<?php include('data-index.php') ?>
+
 <table class="table table-striped table-condensed table-hover" id="datatable">
   <thead>
     <tr>
       <th>#</th>
-      <th>No. KK</th>
-      <th>NIK</th>
-      <th>Nama</th>
-      <th>Jumlah Anggota</th>
+      <th>Nomor KK</th>
+      <th>Kepala Keluarga</th>
+      <th>NIK Kepala</th>
+      <th>Jml. Anggota</th>
       <th>Alamat</th>
       <th>RT</th>
       <th>RW</th>
@@ -18,15 +20,16 @@
     </tr>
   </thead>
   <tbody>
+    <?php foreach ($data_kartu_keluarga as $kartu_keluarga) : ?>
     <tr>
-      <td>1</td>
-      <td>1234567890123456</td>
-      <td>1234567890123456</td>
-      <td>Miftah Afina</td>
-      <td>5</td>
-      <td>Jl. Alamat Ini Itu</td>
-      <td>002</td>
-      <td>004</td>
+      <td><?php echo $kartu_keluarga['id_keluarga'] ?></td>
+      <td><?php echo $kartu_keluarga['nomor_keluarga'] ?></td>
+      <td><?php echo $kartu_keluarga['nama_warga'] ?></td>
+      <td><?php echo $kartu_keluarga['nik_warga'] ?></td>
+      <td>???</td>
+      <td><?php echo $kartu_keluarga['alamat_keluarga'] ?></td>
+      <td><?php echo $kartu_keluarga['rt_keluarga'] ?></td>
+      <td><?php echo $kartu_keluarga['rw_keluarga'] ?></td>
       <td>
         <!-- Single button -->
         <div class="btn-group pull-right">
@@ -35,7 +38,7 @@
           </button>
           <ul class="dropdown-menu pull-right" role="menu">
             <li>
-              <a href="show.php"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
+              <a href="show.php?id_keluarga=<?php echo $kartu_keluarga['id_keluarga'] ?>"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
             </li>
             <li>
               <a href="edit-anggota.php"><span class="glyphicon glyphicon-list"></span> Ubah Anggota</a>
@@ -52,6 +55,7 @@
         </div>
       </td>
     </tr>
+    <?php endforeach ?>
   </tbody>
 </table>
 

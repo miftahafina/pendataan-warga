@@ -3,17 +3,19 @@
 <h1 class="page-header">Data Kartu Keluarga</h1>
 <?php include('_partials/menu.php') ?>
 
+<?php include('data-show.php') ?>
+
 <h3>A. Data Pribadi</h3>
 <table class="table table-striped table-middle">
   <tr>
     <th width="20%">Nomor Kartu Keluarga</th>
     <td width="1%">:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['nomor_keluarga'] ?></td>
   </tr>
   <tr>
     <th>ID Kepala Keluarga</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['id_kepala_keluarga'] ?></td>
   </tr>
 </table>
 
@@ -22,47 +24,47 @@
   <tr>
     <th width="20%">Alamat</th>
     <td width="1%">:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['alamat_keluarga'] ?></td>
   </tr>
   <tr>
     <th>RT</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['rt_keluarga'] ?></td>
   </tr>
   <tr>
     <th>RW</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['rw_keluarga'] ?></td>
   </tr>
   <tr>
     <th>Desa/Kelurahan</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['desa_kelurahan_keluarga'] ?></td>
   </tr>
   <tr>
     <th>Kecamatan</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['kecamatan_keluarga'] ?></td>
   </tr>
   <tr>
     <th>Kabupaten/Kota</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['kabupaten_kota_keluarga'] ?></td>
   </tr>
   <tr>
     <th>Provinsi</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['provinsi_keluarga'] ?></td>
   </tr>
   <tr>
     <th>Negara</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['negara_keluarga'] ?></td>
   </tr>
   <tr>
     <th>Kode Pos</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['kode_pos_keluarga'] ?></td>
   </tr>
 </table>
 
@@ -71,17 +73,17 @@
   <tr>
     <th width="20%">Diinput oleh</th>
     <td width="1%">:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['id_user'] ?></td>
   </tr>
   <tr>
     <th>Diinput</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['created_at'] ?></td>
   </tr>
   <tr>
     <th>Diperbaharui</th>
     <td>:</td>
-    <td></td>
+    <td><?php echo $data_keluarga[0]['updated_at'] ?></td>
   </tr>
 </table>
 
