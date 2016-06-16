@@ -19,7 +19,7 @@ $hasil = mysqli_query($db, $query);
 
 // cek keberhasilan pendambahan data
 if ($hasil == true) {
-  echo "<script>window.location.href='../kartu-keluarga/show.php?id_keluarga=$id_keluarga'</script>";
+  echo "<script>window.location.href='../kartu-keluarga/edit-anggota.php?id_keluarga=$id_keluarga'</script>";
 } else {
-  echo "<script>window.alert('Data anggota gagal dihapus!'); window.location.href='../kartu-keluarga/show.php?id_keluarga=$id_keluarga'</script>";
+  echo "<script>window.alert('Data anggota gagal dihapus!'); window.location.href='../kartu-keluarga/edit-anggota.php?id_keluarga=$id_keluarga'</script>";
 }
