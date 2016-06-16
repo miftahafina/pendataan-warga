@@ -95,7 +95,7 @@
       <th>NIK</th>
       <th>Nama Warga</th>
       <th>Tempat Lahir</th>
-      <th>Usia</th>
+      <th>Lahir</th>
       <th>Pendidikan</th>
       <th>Pekerjaan</th>
       <th>Kawin</th>
@@ -104,16 +104,17 @@
     </tr>
   </thead>
   <tbody>
+    <?php foreach ($data_anggota_keluarga as $anggota_keluarga) : ?>
     <tr>
-      <td>1</td>
-      <td>12345678901234</td>
-      <td>Miftah Afina</td>
-      <td>Pemalang</td>
-      <td>17</td>
-      <td>SMA</td>
-      <td>Serabutan</td>
-      <td>Tidak Kawin</td>
-      <td>Tetap</td>
+      <td><?php echo $anggota_keluarga['id_warga'] ?></td>
+      <td><?php echo $anggota_keluarga['nik_warga'] ?></td>
+      <td><?php echo $anggota_keluarga['nama_warga'] ?></td>
+      <td><?php echo $anggota_keluarga['tempat_lahir_warga'] ?></td>
+      <td><?php echo $anggota_keluarga['tanggal_lahir_warga'] ?></td>
+      <td><?php echo $anggota_keluarga['pendidikan_terakhir_warga'] ?></td>
+      <td><?php echo $anggota_keluarga['pekerjaan_warga'] ?></td>
+      <td><?php echo $anggota_keluarga['status_perkawinan_warga'] ?></td>
+      <td><?php echo $anggota_keluarga['status_perkawinan_warga'] ?></td>
       <td>
         <!-- Single button -->
         <div class="btn-group pull-right">
@@ -122,16 +123,21 @@
           </button>
           <ul class="dropdown-menu pull-right" role="menu">
             <li>
-              <a href="../user/show.php"><span class="glyphicon glyphicon-sunglasses"></span> Detail</a>
+              <a href="../warga/show.php?id_warga=<?php echo $anggota_keluarga['id_warga'] ?>">
+                <span class="glyphicon glyphicon-sunglasses"></span> Detail
+              </a>
             </li>
             <li class="divider"></li>
             <li>
-              <a href="#"><span class="glyphicon glyphicon-trash"></span> Hapus dari Anggota</a>
+              <a href="../kartu-keluarga/delete-anggota.php?id_warga=<?php echo $anggota_keluarga['id_warga'] ?>&id_keluarga=<?php echo $data_keluarga[0]['id_keluarga'] ?>" onclick="return confirm('Yakin hapus data ini?')">
+                <span class="glyphicon glyphicon-trash"></span> Hapus dari Anggota
+              </a>
             </li>
           </ul>
         </div>
       </td>
     </tr>
+    <?php endforeach ?>
   </tbody>
 </table>
 
