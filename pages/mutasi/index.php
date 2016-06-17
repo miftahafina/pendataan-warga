@@ -23,9 +23,10 @@
     </tr>
   </thead>
   <tbody>
+    <?php $nomor = 1; ?>
     <?php foreach ($data_mutasi as $mutasi) : ?>
     <tr>
-      <td><?php echo $mutasi['id_mutasi'] ?></td>
+      <td><?php echo $nomor++ ?>.</td>
       <td><?php echo $mutasi['nik_mutasi'] ?></td>
       <td><?php echo $mutasi['nama_mutasi'] ?></td>
       <td><?php echo $mutasi['jenis_kelamin_mutasi'] ?></td>

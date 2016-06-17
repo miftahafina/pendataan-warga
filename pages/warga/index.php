@@ -23,9 +23,10 @@
     </tr>
   </thead>
   <tbody>
+    <?php $nomor = 1; ?>
     <?php foreach ($data_warga as $warga) : ?>
     <tr>
-      <td><?php echo $warga['id_warga'] ?></td>
+      <td><?php echo $nomor++ ?>.</td>
       <td><?php echo $warga['nik_warga'] ?></td>
       <td><?php echo $warga['nama_warga'] ?></td>
       <td><?php echo $warga['jenis_kelamin_warga'] ?></td>

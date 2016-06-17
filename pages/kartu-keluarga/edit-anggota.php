@@ -68,9 +68,10 @@
     </tr>
   </thead>
   <tbody>
+    <?php $nomor = 1; ?>
     <?php foreach ($data_anggota_keluarga as $anggota_keluarga) : ?>
     <tr>
-      <td><?php echo $anggota_keluarga['id_warga'] ?></td>
+      <td><?php echo $nomor++ ?>.</td>
       <td><?php echo $anggota_keluarga['nik_warga'] ?></td>
       <td><?php echo $anggota_keluarga['nama_warga'] ?></td>
       <td><?php echo $anggota_keluarga['tempat_lahir_warga'] ?></td>

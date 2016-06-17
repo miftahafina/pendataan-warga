@@ -17,4 +17,4 @@
 - ~~Pembatasan akses halaman berdasarkan status_user~~
 - Jika menambahkan id_kepala_keluarga, maka otomatis menambahkannya pada pivot
 - Ubah dari # id menjadi nomor urut
-- Fitur galeri
+- ~~Fitur galeri~~

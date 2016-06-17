@@ -20,6 +20,7 @@
     </tr>
   </thead>
   <tbody>
+    <?php $nomor = 1; ?>
     <?php foreach ($data_kartu_keluarga as $kartu_keluarga) : ?>
 
     <?php
@@ -30,7 +31,7 @@
     ?>
 
     <tr>
-      <td><?php echo $kartu_keluarga['id_keluarga'] ?></td>
+      <td><?php echo $nomor++ ?>.</td>
       <td><?php echo $kartu_keluarga['nomor_keluarga'] ?></td>
       <td><?php echo $kartu_keluarga['nama_warga'] ?></td>
       <td><?php echo $kartu_keluarga['nik_warga'] ?></td>
