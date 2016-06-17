@@ -11,11 +11,6 @@
           <i class="glyphicon glyphicon-eye-open"></i> Lihat Data
         </a>
       </div>
-      <div class="col-md-2">
-        <a href="#" class="btn btn-primary">
-          <i class="glyphicon glyphicon-refresh"></i> Refresh
-        </a>
-      </div>
     </div>
   </div>
 </div>
