@@ -18,5 +18,5 @@ if ($data_user != null) {
   header('Location: ../dasbor');
 } else {
   // jika user dan password tidak cocok
-  header('Location: ../login');
+  echo "<script>window.alert('Username atau password salah'); window.location.href='../login'</script>";
 }
