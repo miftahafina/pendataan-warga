@@ -65,5 +65,8 @@
     });
     $('.selectpicker').selectpicker();
     </script>
+
+    <!-- Lightbox -->
+    <script src="../../assets/lib/lightbox/js/lightbox.min.js"></script>
   </body>
 </html>
